@@ -15,7 +15,7 @@ $(function() {
 
 
 
-    
+//     function to fill course number option after selecting a subject
 
 $("#subjectName").on("change", function(e) {
         $("#courseNumber").prop("disabled", false);
@@ -46,7 +46,15 @@ $("#subjectName").on("change", function(e) {
                 });
             }
         });
-// submit that appends a new element with the search results 
+    });
+//     These shouldn't even be needed any more but github treats them like load bearing code so I guess I'm keeping it 
+    $('.button-one').click(function() {
+    document.location.href="../pages/badui.html" + $(this).attr('id');
+ });
+ $('.button-two').click(function() {
+    document.location.href="../pages/goodui.html" + $(this).attr('id');
+ });
+//     submit button to gen up an element that outputs the search results
     $("#submitButton").click(function () {
             var el = `<div style="width: 100%;">
             <div class="card" id=>
@@ -62,7 +70,7 @@ $("#subjectName").on("change", function(e) {
           $('#searchResult').append(el);
 
     })
-//     clears said newly created element 
+//     clears previously mentioned element
     $('#resetButton').click(function(){
         $('#searchResult').empty();
   })
