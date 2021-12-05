@@ -26,10 +26,10 @@
               <a class="nav-link" href="goodui.html">Good Ui</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://github.com/2fortdev/Final376">See the Code</a>
+                <a class="nav-link" href="https://github.com/2fortdev/Final376"  target="_blank">See the Code</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Page Validity</a>
+                <a class="nav-link" href="#"  target="_blank">Page Validity</a>
               </li>
           </ul>
         </div>
@@ -37,8 +37,9 @@
     <div class="page-wrap" id = body>
         <div  class="d-flex p-2" id = info></div>
             <h1 class ="text-center">Improved Design</h1>
+            <h5 class = "text-center"> What I did: Removed keywords, centered text, put the entire search in a neat container, made sure to show the course numbers in the course numbers field, put the subject list in jquery rather than having to load it from somewhere else, and output your search to display</h5>
+            <br>
         </div>
-    </div>
 
     <div class="flex-wrapper">
     <div class="row">
@@ -51,8 +52,8 @@
                     Instructors may require exam proctoring services to verify student identity and minimize the risk of academic dishonesty. When required, these services may include an additional cost to the student.
                 </h5>
                 <br>
-                <label for="petKind" class="form-label">Subject</label>
-                <select id="petKind" class="form-select" type="select" name="courseNumber">
+                <label for="subjectName" class="form-label">Subject</label>
+                <select id="subjectName" class="form-select" name="courseNumber">
       <option value="">Select a Subject</option>
       <option value="MA">MA-Mathematics</option>
       <option value="AR">AR-Art</option>
@@ -67,7 +68,7 @@
         </select>
                 <br>
                 <label for="courseNumber" class="form-label">Course #</label>
-                <select id="courseNumber" class="form-select" type="select" name="courseNumber" disabled>
+                <select id="courseNumber" class="form-select" name="courseNumber" disabled>
             <option value ="">Select a subject to see avaliable classes.</option>
         </select>
             </div>
