@@ -29,78 +29,58 @@
                 <a class="nav-link" href="https://github.com/2fortdev/Final376"  target="_blank">See the Code</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://validator.w3.org/nu/?doc=https%3A%2F%2F2fortdev.github.io%2FFinal376%2Fpages%2Fgoodui.html"  target="_blank">Page Validity</a>
+                <a class="nav-link" href="#"  target="_blank">Page Validity</a>
               </li>
           </ul>
         </div>
       </nav>
     <div class="page-wrap" id = body>
-        <div  class="d-flex p-2" id = info></div>
-            <h1 class ="text-center">Improved Design</h1>
-            <h5 class = "text-center"> What I did: Removed keywords, centered text, put the entire search in a neat container, made sure to show the course numbers in the course numbers field, put the subject list in jquery rather than having to load it from somewhere else, and output your search to display</h5>
+        <div  class="d-flex p-2 mx-auto" id = info></div>
+            <h1 class ="text-center">Original Layout</h1>
             <br>
-        </div>
-
-    <div class="flex-wrapper">
-    <div class="row">
-        <div class="col-md-5 offset-md-1 card">
-            <div class="card-body">
-<!-- General text within the card body that was good info for students in original -->
-                <h4 class="card-title text-center">Search for classes </h4>
-                <h5>For undergraduate students who are enrolled in 12 to 14 hours for the semester, you may register for up to 18 hours at no additional tuition cost. Other course fees will apply.
-
-                    Instructors may require exam proctoring services to verify student identity and minimize the risk of academic dishonesty. When required, these services may include an additional cost to the student.
-                </h5>
-                <br>
-<!--      Form for selecting your subject         -->
-                <label for="subjectName" class="form-label">Subject</label>
-                <select id="subjectName" class="form-select" name="courseNumber">
-      <option value="">Select a Subject</option>
-      <option value="MA">MA-Mathematics</option>
-      <option value="AR">AR-Art</option>
-      <option value="BI">BI-Biology</option>
-      <option value="CH">CH-Chemistry</option>
-      <option value="COM">COM-Communications</option>
-      <option value="DA">DA-Data Analytics</option>
-      <option value="EC">EC-Economics</option>
-      <option value="EN">EN-English</option>
-      <option value="FR">FR-French</option>
-      <option value="GR">GR-German</option>
-        </select>
-                <br>
-                <label for="courseNumber" class="form-label">Course #</label>
-                <select id="courseNumber" class="form-select" name="courseNumber" disabled>
-            <option value ="">Select a subject to see avaliable classes.</option>
-        </select>
-<!--       course numbers are done via Jquery rather than being listed in html         -->
+            <div class="card shadow p-3 mx-auto" style="width: 95rem;">
+                <img class="card-img-top" alt="See how little is shown by it" src="../img/badui.png">
+                
             </div>
-
-     
-
-            <br>
-
-
-            <div class="col-md-5 offset-md-1 card">
-                <div class="card-body">
-                    <h5 class="text-center">Search Result:
-                    </h5>
-                    <div id ="searchResult"></div>
-<!--        card where your search will be displayed via appending in Jquery            -->
+            
+            <p class="text-center"><br>Here we can see what the current browse for classes page looks like. When clicking the subjects, a drop down menu appears with all the subjects that are avaliable. </p>
+            <p class="text-center">The second form is not a drop down menu but an input for the class number. The third form is for you to search for a class via keywords. </p>
+            <div class="card shadow p-3 mx-auto" style="width: 95rem;">
+                <img class="card-img-top" alt="The course number input field is only useful if you know the exact number" src="../img/badui2.png">
+                <div class="card-body ">
+                  <p class="card-text text-center">The only thing it has here, is what I've typed previously.</p>
                 </div>
-
             </div>
-            <div class="col text-center">
-           <!-- Submit and reset buttons  -->
-           <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
-           <button type="reset" class="btn btn-primary" id="resetButton">Reset</button>
-           </div>
-           <br>
+            <br>
+            <br>
+            <p class="text-center">The issues with this format is just usability, the subject list doesn't load in at once meaning as you scroll it has to stop and load more subjects. The second form gives no feedback or information what-so ever, making you type in the class number rather than showing you a list to choose from, this could help if you can only remember what level a class was.  </p>
+            <p class="text-center">The third form frankley does not work at all, I tried searching various subjects, class names, and no results were found any time I used it. It just seems a bit cumbersome and too light on the info for new users to handle.</p>
+            <p class="text-center">Also as a personal pet peeve, left alligned text bothers me. So we'll get that centered. It's also just sort of floating there in a big container with the text, looks like the options are lost in the snow. Putting a container around it will focus the user's eyes on the stuff they need.</p>
+            <br>
         </div>
-    
-    </div>
-    
+        
+
+
+        
+        <div class="container">
+            <div class="row">
+              <div class="col text-center">
+                <a href="goodui.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Let's look at the improved version
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+  
+
+ 
+
+
     <section class="">
-        <footer class="bg-dark text-center text-white">
+        <footer class="bg-dark text-center text-lg-start text-white">
           <div class="container p-4 container-fluid">
             <div class="row">
               <!--Grid column-->
@@ -118,11 +98,11 @@
                 <h5 class="text-uppercase">Links</h5>
       
                 <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="https://github.com/2fortdev" class="text-white" target="_blank">Github page</a>
-                  </li>
-                  <li>
-                    <a href="https://gist.github.com/barrycumbie/bdbafe19a5de141fb1e0930b32e439e7" class="text-white" target="_blank">Project page</a>
+                    <li>
+                        <a href="https://github.com/2fortdev" class="text-white" target="_blank">Github page</a>
+                      </li>
+                      <li>
+                        <a href="https://gist.github.com/barrycumbie/bdbafe19a5de141fb1e0930b32e439e7" class="text-white"  target="_blank">Project page</a>
                 </ul>
               </div>
             </div>
@@ -130,11 +110,11 @@
       
           <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
              2021
-            <a class="text-white">Sam Aaron</a>
+            <a class="text-white text-center">Sam Aaron</a>
           </div>
         </footer>
       </section>
-    </div>
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
