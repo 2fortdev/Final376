@@ -1,5 +1,5 @@
 $(function() {
-
+    // Subjects and their course numbers
     let courseNumber = [
         ["MA", ["100", "100E", "105", "110","111","112","115","122"]],
         ["AR", ["170", "200", "201","221","222","231","232","282"]],
@@ -16,22 +16,14 @@ $(function() {
 
 
     
-
-$("#petKind").on("change", function(e) {
-        //enables the pet name dropdown
+//function to enable and fill the course number selector 
+$("#subjectName").on("change", function(e) {
         $("#courseNumber").prop("disabled", false);
 
         let inputVal = this.value;
-
-        // console.log(inputVal);
-
-        //loop though array of pet names
         $.each(courseNumber, function(key, value) {
-            //match pet name to user selected
             if (inputVal === value[0]) {
-                // console.log(value[0] + key + value);
                 $.each(value, function(nestKey, nestValue) {
-                    // console.log(nestKey);
 
                     switch (nestKey) {
                         case 0:
@@ -55,19 +47,13 @@ $("#petKind").on("change", function(e) {
             }
         });
     });
-
-    $('.button-one').click(function() {
-    document.location.href="../pages/badui.html" + $(this).attr('id');
- });
- $('.button-two').click(function() {
-    document.location.href="../pages/goodui.html" + $(this).attr('id');
- });
+// submit button to output the subject + course number selected 
     $("#submitButton").click(function () {
             var el = `<div style="width: 100%;">
             <div class="card" id=>
                 <div class="card-body text-center">
                     <p class="card-text">
-                        Subject: ${ $('#petKind').find(":selected").text()}
+                        Subject: ${ $('#subjectName').find(":selected").text()}
                         Class: ${ $('#courseNumber').find(":selected").text()}
                    
                 </div>
@@ -77,6 +63,7 @@ $("#petKind").on("change", function(e) {
           $('#searchResult').append(el);
 
     })
+//     emptys the div where search results where outputted. 
     $('#resetButton').click(function(){
         $('#searchResult').empty();
   })
