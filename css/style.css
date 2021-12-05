@@ -1,0 +1,52 @@
+
+.search-for-class-og
+  {
+    
+    background-position: -9px -7px;
+    background-repeat: no-repeat;
+    background-size: 39px 43px;
+    padding-left: 41px;
+    color: #000;
+  }
+    
+      /* Green */
+      .success {
+        border-color: #04AA6D;
+        color: green;
+      }
+      
+      .success:hover {
+        background-color: #04AA6D;
+        color: white;
+      }
+      .card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+        }
+        html, body {
+            height: 100%;
+          }
+          
+          #wrap {
+            min-height: 100%;
+          }
+          
+          #main {
+            overflow:auto;
+            padding-bottom:150px; /* this needs to be bigger than footer height*/
+          }
+          
+         
+          .flex-wrapper {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+         
+    /* #info {
+    margin-top: 10px;
+    font-size: 20px;
+    display: inline-block;
+  } */

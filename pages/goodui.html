@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <title>Searching for classes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='../css/style.css'>
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="badui.html">Bad Ui</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="goodui.html">Good Ui</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">See the Code</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Page Validity</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="page-wrap" id = body>
+        <div  class="d-flex p-2" id = info></div>
+            <h1 class ="text-center">Improved Design</h1>
+        </div>
+    </div>
+
+    <div class="flex-wrapper">
+    <div class="row">
+        <div class="col-md-5 offset-md-1 card">
+            <div class="card-body">
+
+                <h4 class="card-title text-center">Search for classes </h4>
+                <h5>For undergraduate students who are enrolled in 12 to 14 hours for the semester, you may register for up to 18 hours at no additional tuition cost. Other course fees will apply.
+
+                    Instructors may require exam proctoring services to verify student identity and minimize the risk of academic dishonesty. When required, these services may include an additional cost to the student.
+                </h5>
+                <br>
+                <label for="petKind" class="form-label">Subject</label>
+                <select id="petKind" class="form-select" type="select" name="courseNumber">
+      <option value="">Select a Subject</option>
+      <option value="MA">MA-Mathematics</option>
+      <option value="AR">AR-Art</option>
+      <option value="BI">BI-Biology</option>
+      <option value="CH">CH-Chemistry</option>
+      <option value="COM">COM-Communications</option>
+      <option value="DA">DA-Data Analytics</option>
+      <option value="EC">EC-Economics</option>
+      <option value="EN">EN-English</option>
+      <option value="FR">FR-French</option>
+      <option value="GR">GR-German</option>
+        </select>
+                <br>
+                <label for="courseNumber" class="form-label">Course #</label>
+                <select id="courseNumber" class="form-select" type="select" name="courseNumber" disabled>
+            <option value ="">Select a subject to see avaliable classes.</option>
+        </select>
+            </div>
+
+     
+
+            <br>
+
+
+            <div class="col-md-5 offset-md-1 card">
+                <div class="card-body">
+                    <h5 class="text-center">Search Result:
+                    </h5>
+                    <div id ="searchResult"></div>
+                </div>
+
+            </div>
+            <div class="col text-center">
+           <!-- Submit and reset buttons  -->
+           <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+           <button type="reset" class="btn btn-primary" id="resetButton">Reset</button>
+           </div>
+           <br>
+        </div>
+    
+    </div>
+    
+    <section class="">
+        <footer class="bg-dark text-center text-white">
+          <div class="container p-4 container-fluid">
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Brief Description</h5>
+      
+                <p>
+                  Made for CS-376, the project was to select an example of bad ui and improve upon it. For this I chose UNA's search class feature for registering.
+                </p>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Links</h5>
+      
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="https://github.com/2fortdev" class="text-white" target="_blank">Github page</a>
+                  </li>
+                  <li>
+                    <a href="https://gist.github.com/barrycumbie/bdbafe19a5de141fb1e0930b32e439e7" class="text-white" target="_blank">Project page</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+             2021
+            <a class="text-white">Sam Aaron</a>
+          </div>
+        </footer>
+      </section>
+    </div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script  src="../scripts/scripts.js"></script>
+</body>
