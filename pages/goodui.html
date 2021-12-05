@@ -45,13 +45,14 @@
     <div class="row">
         <div class="col-md-5 offset-md-1 card">
             <div class="card-body">
-
+<!-- General text within the card body that was good info for students in original -->
                 <h4 class="card-title text-center">Search for classes </h4>
                 <h5>For undergraduate students who are enrolled in 12 to 14 hours for the semester, you may register for up to 18 hours at no additional tuition cost. Other course fees will apply.
 
                     Instructors may require exam proctoring services to verify student identity and minimize the risk of academic dishonesty. When required, these services may include an additional cost to the student.
                 </h5>
                 <br>
+<!--      Form for selecting your subject         -->
                 <label for="subjectName" class="form-label">Subject</label>
                 <select id="subjectName" class="form-select" name="courseNumber">
       <option value="">Select a Subject</option>
@@ -71,6 +72,7 @@
                 <select id="courseNumber" class="form-select" name="courseNumber" disabled>
             <option value ="">Select a subject to see avaliable classes.</option>
         </select>
+<!--       course numbers are done via Jquery rather than being listed in html         -->
             </div>
 
      
@@ -83,6 +85,7 @@
                     <h5 class="text-center">Search Result:
                     </h5>
                     <div id ="searchResult"></div>
+<!--        card where your search will be displayed via appending in Jquery            -->
                 </div>
 
             </div>
