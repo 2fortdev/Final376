@@ -46,14 +46,7 @@ $("#subjectName").on("change", function(e) {
                 });
             }
         });
-    });
-
-    $('.button-one').click(function() {
-    document.location.href="../pages/badui.html" + $(this).attr('id');
- });
- $('.button-two').click(function() {
-    document.location.href="../pages/goodui.html" + $(this).attr('id');
- });
+// submit that appends a new element with the search results 
     $("#submitButton").click(function () {
             var el = `<div style="width: 100%;">
             <div class="card" id=>
@@ -69,6 +62,7 @@ $("#subjectName").on("change", function(e) {
           $('#searchResult').append(el);
 
     })
+//     clears said newly created element 
     $('#resetButton').click(function(){
         $('#searchResult').empty();
   })
