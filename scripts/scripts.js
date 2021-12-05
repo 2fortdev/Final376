@@ -16,7 +16,7 @@ $(function() {
 
 
     
-//function to enable and fill the course number selector 
+
 $("#subjectName").on("change", function(e) {
         $("#courseNumber").prop("disabled", false);
 
@@ -47,7 +47,13 @@ $("#subjectName").on("change", function(e) {
             }
         });
     });
-// submit button to output the subject + course number selected 
+
+    $('.button-one').click(function() {
+    document.location.href="../pages/badui.html" + $(this).attr('id');
+ });
+ $('.button-two').click(function() {
+    document.location.href="../pages/goodui.html" + $(this).attr('id');
+ });
     $("#submitButton").click(function () {
             var el = `<div style="width: 100%;">
             <div class="card" id=>
@@ -63,7 +69,6 @@ $("#subjectName").on("change", function(e) {
           $('#searchResult').append(el);
 
     })
-//     emptys the div where search results where outputted. 
     $('#resetButton').click(function(){
         $('#searchResult').empty();
   })
